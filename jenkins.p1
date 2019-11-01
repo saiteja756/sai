@@ -1,0 +1,57 @@
+node {
+    stage('checkout from SCM')
+    {
+        echo "downloading from github"
+    }
+    stage('Build')
+    {
+        echo "Build stage"
+    }
+    stage('Nexus upload')
+    {
+	echo "Uploaded the artifact to Nexus"
+    }
+    stage('security check')
+    {
+	echo "Perform the security check"
+    }
+    stage('code quality check')
+    {
+	echo "code quality Analysis"
+    }
+    stage('deploy')
+    {
+        echo "Deployment stage"
+    }
+    stage('sucess')
+    {
+        echo "all success"
+    }
+    stage('Deployment')
+    {
+        echo "all success"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
